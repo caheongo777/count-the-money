@@ -1,9 +1,191 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
+<head>	
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<title>Đếm tiền</title>
 </head>
-<body>
+<body class="bg-dark text-white text-center " >
+ <div class="container">
+  <div class="row">	
+<!-- PHẦN ĐẦU: GIỚI THIỆU 	 -->
+  	<div class="mt-2 col-12">
+ 		<h1 class="text-center">BẢNG ĐẾM TIỀN</h1>
+ 		<p class="text-center">Các mệnh giá tờ tiền</p>
+ 		<p class="text-center">1-2-5-10-20-50-100-200-500</p>
+ 		<p class="text-center">Đơn vị tính 1.000đ</p>
+ 	</div>
+<!-- BẢNG TÍNH -->
+ <table class="table table-bordered text-white">
+    <thead>
+      <tr>
+        <th>Mệnh Giá</th>
+        <th style="padding-bottom: 20px">Số Tờ</th>
+        <th>Tổng Tiền</th>
+      </tr>
+    </thead>
+    <tbody >
+      <tr>
+        <td id="1">1</td>
+        <td ><input id="2" class="bg-dark text-white order border-0 form-control text-center " type="text" name=""></td>
+        <td id="3"></td>
+      </tr>
+      <tr>
+        <td id="4" >2</td>
+       <td><input id="5"  class="bg-dark text-white order border-0 form-control  text-center" type="text" name=""></td>
+        <td id="6"></td>
+      </tr>
+      <tr>
+        <td id="7" >5</td>
+        <td><input id="8"  class="bg-dark text-white order border-0 form-control text-center" type="text" name=""></td>
+        <td id="9"></td>
+      </tr>
+       <tr>
+        <td id="10">10</td>
+        <td><input id="11"  class="bg-dark text-white order border-0 form-control text-center" type="text" name=""></td>
+        <td id="12"></td>
+      </tr>
+       <tr>
+        <td id="13">20</td>
+        <td><input  id="14" class="bg-dark text-white order border-0 form-control text-center" type="text" name=""></td>
+        <td id="15"></td>
+      </tr>
+       <tr>
+        <td id="16">50</td>
+        <td><input  id="17" class="bg-dark text-white order border-0 form-control text-center" type="text" name=""></td>
+        <td id="18"></td>
+      </tr>
+       <tr>
+        <td id="19">100</td>
+        <td><input id="20" class="bg-dark text-white order border-0 form-control text-center" type="text" name=""></td>
+        <td id="21"></td>
+      </tr>
+       <tr>
+        <td id="22">200</td>
+        <td><input  id="23" class="bg-dark text-white order border-0 form-control text-center" type="text" name=""></td>
+        <td id="24"></td>
+      </tr>
+       <tr>
+        <td id="25">500</td>
+        <td><input id="26"  class="bg-dark text-white order border-0 form-control text-center" type="text" name=""></td>
+        <td id="27"></td>
+      </tr>
+    </tbody>
+  </table>
+<!-- KẾT QUẢ -->
+<button  type="button" class="btn btn-secondary btn-lg text-white " onclick = "tong(),tong1(),tong2(),tong3(),tong4(),tong5(),tong6(),tong7(),tong8(),tong9()" >TỔNG SỐ TIỀN ĐẾM ĐƯỢC :</button>
+
+<h2 id="28" class="pl-2"></h2><br>
+<!-- LỜI CHÚC -->
+<div class="col-12">
+	<p class="text-center blockquote"> CHÚC CÁC BẠN MỘT NGÀY THẬT MAY MẮN KIỂM ĐƯỢC NHIỀU XÈNG</p>
+ 
+</div>
+
+
+  </div>	
+ </div>
+ <!-- ĐOẠN MÃ SCRIPT -->
+<script type="text/javascript">
+// HÀNG 1
+		function tong(a,b) {
+			var a = parseInt(document.getElementById("1").innerText);
+  			var b = parseInt(document.getElementById("2").value);
+  			var content = a*b;
+  			var htmlList = document.getElementById('3');
+   			htmlList.innerHTML=content;
+		}
+// HÀNG 2
+		function tong1(a,b) {
+			var a = parseInt(document.getElementById("4").innerText);
+  			var b = parseInt(document.getElementById("5").value);
+  			var content = a*b;
+  			var htmlList = document.getElementById('6');
+   			htmlList.innerHTML=content;
+		}
+// HÀNG 3
+		function tong2(a,b) {
+			var a = parseInt(document.getElementById("7").innerText);
+  			var b = parseInt(document.getElementById("8").value);
+  			var content = a*b;
+  			var htmlList = document.getElementById('9');
+   			htmlList.innerHTML=content;
+		}
+// HÀNG 4
+		function tong3(a,b) {
+			var a = parseInt(document.getElementById("10").innerText);
+  			var b = parseInt(document.getElementById("11").value);
+  			var content = a*b;
+  			var htmlList = document.getElementById('12');
+   			htmlList.innerHTML=content;
+		}
+// HÀNG 5
+		function tong4(a,b) {
+			var a = parseInt(document.getElementById("13").innerText);
+  			var b = parseInt(document.getElementById("14").value);
+  			var content = a*b;
+  			var htmlList = document.getElementById('15');
+   			htmlList.innerHTML=content;
+		}
+// HÀNG 6
+		function tong5(a,b) {
+			var a = parseInt(document.getElementById("16").innerText);
+  			var b = parseInt(document.getElementById("17").value);
+  			var content = a*b;
+  			var htmlList = document.getElementById('18');
+   			htmlList.innerHTML=content;
+		}
+// HÀNG 7
+		function tong6(a,b) {
+			var a = parseInt(document.getElementById("19").innerText);
+  			var b = parseInt(document.getElementById("20").value);
+  			var content = a*b;
+  			var htmlList = document.getElementById('21');
+   			htmlList.innerHTML=content;
+		}
+// HÀNG 8
+		function tong7(a,b) {
+			var a = parseInt(document.getElementById("22").innerText);
+  			var b = parseInt(document.getElementById("23").value);
+  			var content = a*b;
+  			var htmlList = document.getElementById('24');
+   			htmlList.innerHTML=content;
+		}
+// HÀNG 9
+		function tong8(a,b) {
+			var a = parseInt(document.getElementById("25").innerText);
+  			var b = parseInt(document.getElementById("26").value);
+  			var content = a*b;
+  			var htmlList = document.getElementById('27');
+   			htmlList.innerHTML=content;
+		}
+//TỎNG SỐ TIỀN ĐẾM ĐƯỢC:
+		function tong9(a,b,c,d,e,f,g,h,i) {
+			
+			var a = parseInt(document.getElementById(3).innerText);
+			var b = parseInt(document.getElementById(6).innerText);
+			var c = parseInt(document.getElementById(9).innerText);
+			var d = parseInt(document.getElementById(12).innerText);
+			var e = parseInt(document.getElementById(15).innerText);
+			var f = parseInt(document.getElementById(18).innerText);
+			var g = parseInt(document.getElementById(21).innerText);
+			var h = parseInt(document.getElementById(24).innerText);
+			var i = parseInt(document.getElementById(27).innerText);
+			content=a+b+c+d+e+f+g+h+i;
+			var htmlList = document.getElementById("28");
+   			htmlList.innerHTML=content;
+		}
+
+
+
+
+</script>
+
 
 </body>
 </html>
