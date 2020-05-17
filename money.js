@@ -1,3 +1,3 @@
-function demtien(){
+function demtien(a,b){
 
 }
