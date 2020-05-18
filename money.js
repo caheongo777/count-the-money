@@ -1,3 +1,0 @@
-function demtien(a,b){
-
-}
